@@ -36,6 +36,9 @@ const useStyles = makeStyles(theme => ({
     photo: {
        cursor: 'pointer'
     },
+    loading: {
+        display: 'flex'
+    },
     img: {
         height: 'auto',
         [theme.breakpoints.up("sm")] : {
@@ -119,7 +122,9 @@ function Portfolio (props) {
     return (
       <>
         <div className={classes.root}>
-          <CircularProgress style={{display: loading ? "block" : "none"}}/>
+          <div className={classes.loading}>
+            <CircularProgress style={{display: loading ? "block" : "none"}}/>
+          </div>
           <GridList cols={getGridListCols(props)} cellHeight={210} className={classes.gridList} spacing={7} style={{visibility: loading ? "hidden" : "visible"}}>
             {paths.map((photo, index) => (
                 <GridListTile key={index} className={classes.photo}>
