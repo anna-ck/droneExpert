@@ -55,13 +55,17 @@ function App(props) {
     setValue(newValue);
   };
 
+  const resetValue = () => {
+    setValue(0);
+  }
+
   return (
     <Router>
       <CssBaseline/>
       <div className={classes.root}>
           <Paper className={classes.nav}>
             <Route render={({history}) => (
-              <div className={classes.header} onClick={() => { history.push('/')}}>
+              <div className={classes.header} value={0} onClick={() => { history.push('/'); resetValue()}}>
                   <Typography variant={getResponsiveHeader(props)} align='center'>Drone <span style={{color:'	#DC143C', fontWeight: 500}}>Expert</span></Typography>
               </div>
             )} />
