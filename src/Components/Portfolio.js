@@ -11,7 +11,9 @@ const useStyles = makeStyles(theme => ({
       flexWrap: "wrap",
       justifyContent: "space-around",
       overflow: "hidden",
-      margin: '40px 60px'
+      margin: '40px 60px',
+      flexDirection: 'column',
+      alignItems: 'center'
     },
     header: {
         width: '80%',
@@ -37,7 +39,7 @@ const useStyles = makeStyles(theme => ({
        cursor: 'pointer'
     },
     loading: {
-        display: 'flex'
+        margin: '0 auto',
     },
     img: {
         height: 'auto',
