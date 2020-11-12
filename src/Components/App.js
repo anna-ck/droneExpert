@@ -32,6 +32,12 @@ const useStyles = makeStyles(theme => ({
     minHeight: '130px',
     cursor: 'pointer'
   },
+  content: {
+    minHeight: '70vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
   footer: {
     padding: '5px',
     marginTop: '40px',
@@ -82,20 +88,22 @@ function App(props) {
             </Tabs>
           </Paper>
         <Redirect to='/' />
-        <Switch>
-          <Route path="/offer">
-            <Offer />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home onClick={handleChange}/>
-          </Route>
-        </Switch>
+        <div className={classes.content}>
+          <Switch>
+            <Route path="/offer">
+              <Offer />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home onClick={handleChange}/>
+            </Route>
+          </Switch>
+        </div>
         <div className={classes.footer}>
                   <Typography variant='body2' align='left'> &#xA9; Copyright by ACK 2020</Typography>
         </div>
