@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
     cursor: 'pointer'
   },
   content: {
-    minHeight: '70vh',
+    minHeight: '73vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
