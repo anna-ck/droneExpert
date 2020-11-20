@@ -1,14 +1,14 @@
-# Drone Expert
+## Drone Expert
 
-## General info
+### General info
 Drone Expert is a simple portfolio website of imaginary drone photography company.
 
-#### Live: https://drone-expert.herokuapp.com
+### Live: https://drone-expert.herokuapp.com
 
-## Technologies
+### Technologies
 * React
 * React Router
 * Material UI
 
-## Sources
+### Sources
 It is a website of fake company. All images in the portfolio section were downloaded from pixabay.com.
